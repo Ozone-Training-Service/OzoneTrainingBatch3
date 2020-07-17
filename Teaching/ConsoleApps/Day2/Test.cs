@@ -40,6 +40,9 @@ namespace Day2
         static void Main(string[] args)
         {
 
+
+
+            
             Student s1 = new Student();
             s1.display();
             Student s2 = new Student();
