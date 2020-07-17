@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.NetworkInformation;
 using System.Text;
 
@@ -70,36 +71,46 @@ namespace Day2
             s3.display();
 
 
+            using (StreamWriter sw = new StreamWriter(@"E:\filesystem\progress.txt"))
+            {
+                sw.WriteLine("\t\t Report\n");
+                sw.WriteLine("\t\t____________");
+                sw.WriteLine("Name          {0}", s1.name);
+                sw.WriteLine("roll          {0}", s1.roll);
+                sw.WriteLine("M1             {0}", s1.m1);
+                sw.WriteLine("m2              {0}", s1.m2);
+                sw.WriteLine("Total              {0}", s1.total);
+                sw.WriteLine("avg              {0}", s1.avg);
 
+                sw.WriteLine("\t\t Report\n");
+                sw.WriteLine("\t\t____________");
+                sw.WriteLine("Name          {0}", s2.name);
+                sw.WriteLine("roll          {0}", s2.roll);
+                sw.WriteLine("M1             {0}", s2.m1);
+                sw.WriteLine("m2              {0}", s2.m2);
+                sw.WriteLine("Total              {0}", s2.total);
+                sw.WriteLine("avg              {0}", s2.avg);
 
-            Console.WriteLine("\t\t Report\n");
-            Console.WriteLine("\t\t____________");
-            Console.WriteLine("Name          {0}",s1.name);
-            Console.WriteLine("roll          {0}", s1.roll);
-            Console.WriteLine("M1             {0}",s1.m1);
-            Console.WriteLine("m2              {0}",s1.m2);
-            Console.WriteLine("Total              {0}", s1.total);
-            Console.WriteLine("avg              {0}", s1.avg);
+                sw.WriteLine("\t\t Report\n");
+                sw.WriteLine("\t\t____________");
+                sw.WriteLine("Name          {0}", s3.name);
+                sw.WriteLine("roll          {0}", s3.roll);
+                sw.WriteLine("M1             {0}", s3.m1);
+                sw.WriteLine("m2              {0}", s3.m2);
+                sw.WriteLine("Total              {0}", s3.total);
+                sw.WriteLine("avg              {0}", s3.avg);
+            }
 
-            Console.WriteLine("\t\t Report\n");
-            Console.WriteLine("\t\t____________");
-            Console.WriteLine("Name          {0}", s2.name);
-            Console.WriteLine("roll          {0}", s2.roll);
-            Console.WriteLine("M1             {0}", s2.m1);
-            Console.WriteLine("m2              {0}", s2.m2);
-            Console.WriteLine("Total              {0}", s2.total);
-            Console.WriteLine("avg              {0}", s2.avg);
+            using (StreamReader sr = new StreamReader(@"E:\filesystem\progress.txt"))
+            {
+                string s;
+                do
+                {
+                    s = sr.ReadLine();
+                    Console.WriteLine(s);
 
-            Console.WriteLine("\t\t Report\n");
-            Console.WriteLine("\t\t____________");
-            Console.WriteLine("Name          {0}", s3.name);
-            Console.WriteLine("roll          {0}", s3.roll);
-            Console.WriteLine("M1             {0}", s3.m1);
-            Console.WriteLine("m2              {0}", s3.m2);
-            Console.WriteLine("Total              {0}", s3.total);
-            Console.WriteLine("avg              {0}", s3.avg);
-
-
+                } while (s != null);
+            }
 
 
 
