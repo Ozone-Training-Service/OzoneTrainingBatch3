@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Text;
 
 namespace Day2
@@ -25,8 +26,26 @@ namespace Day2
             m2 = Convert.ToInt32(Console.ReadLine());
             total = m1 + m2;
             avg = total / 2;
-            
-            
+            if (avg > 80 && avg <= 100)
+            {
+                Console.WriteLine("A grade");
+
+                if (avg > 60 && avg <= 80)
+                {
+                    Console.WriteLine("B grade");
+                }
+            }
+            else if(avg>40 && avg<=60)
+            {
+                Console.WriteLine("c grade");
+            }
+            else
+            {
+                Console.WriteLine("d grade");
+                Console.WriteLine("you re failed");
+            }
+
+
 
 
         }
@@ -60,6 +79,7 @@ namespace Day2
             Console.WriteLine("M1             {0}",s1.m1);
             Console.WriteLine("m2              {0}",s1.m2);
             Console.WriteLine("Total              {0}", s1.total);
+            Console.WriteLine("avg              {0}", s1.avg);
 
             Console.WriteLine("\t\t Report\n");
             Console.WriteLine("\t\t____________");
@@ -68,6 +88,7 @@ namespace Day2
             Console.WriteLine("M1             {0}", s2.m1);
             Console.WriteLine("m2              {0}", s2.m2);
             Console.WriteLine("Total              {0}", s2.total);
+            Console.WriteLine("avg              {0}", s2.avg);
 
             Console.WriteLine("\t\t Report\n");
             Console.WriteLine("\t\t____________");
@@ -76,6 +97,7 @@ namespace Day2
             Console.WriteLine("M1             {0}", s3.m1);
             Console.WriteLine("m2              {0}", s3.m2);
             Console.WriteLine("Total              {0}", s3.total);
+            Console.WriteLine("avg              {0}", s3.avg);
 
 
 
