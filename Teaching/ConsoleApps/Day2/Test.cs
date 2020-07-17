@@ -26,6 +26,9 @@ namespace Day2
         static void Main(string[] args)
         {
 
+
+
+            
             Student s1 = new Student();
             Console.WriteLine("Enter Name");
             s1.name = Console.ReadLine();
