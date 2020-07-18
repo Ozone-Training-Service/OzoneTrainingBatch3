@@ -6,6 +6,8 @@ namespace Day2
 {
     class Student
     {
+
+
         public int roll;
         public int m1;
         public int m2;

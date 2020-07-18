@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{A1CDE7A7-FB24-43D1-B056-19787633F4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{A1CDE7A7-FB24-43D1-B056-19787633F4D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teaching", "Teaching", "{18CC898A-0B93-4E2D-B717-84C12C1ABE90}"
 EndProject
@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vishnu", "Vishnu", "{924536
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Akshay", "Akshay", "{C1D3E2C3-F9A2-4952-9316-3ED60CB6E32C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2", "Teaching\ConsoleApps\Day2\Day2.csproj", "{ACC6F373-6422-4E8E-B241-39E6EC514783}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2", "Teaching\ConsoleApps\Day2\Day2.csproj", "{ACC6F373-6422-4E8E-B241-39E6EC514783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4", "Teaching\ConsoleApps\Day4\Day4.csproj", "{B383FB86-8D6E-4692-AEBD-331FFBB3B765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{ACC6F373-6422-4E8E-B241-39E6EC514783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC6F373-6422-4E8E-B241-39E6EC514783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC6F373-6422-4E8E-B241-39E6EC514783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B383FB86-8D6E-4692-AEBD-331FFBB3B765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B383FB86-8D6E-4692-AEBD-331FFBB3B765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B383FB86-8D6E-4692-AEBD-331FFBB3B765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B383FB86-8D6E-4692-AEBD-331FFBB3B765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{924536B7-8D82-43C1-A0F1-33FDB7C6666B} = {F6A0BB95-F3B6-42D0-A735-77D29C3664C8}
 		{C1D3E2C3-F9A2-4952-9316-3ED60CB6E32C} = {F6A0BB95-F3B6-42D0-A735-77D29C3664C8}
 		{ACC6F373-6422-4E8E-B241-39E6EC514783} = {6BA84BD4-6FE1-46E7-9ADF-72466B311032}
+		{B383FB86-8D6E-4692-AEBD-331FFBB3B765} = {6BA84BD4-6FE1-46E7-9ADF-72466B311032}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BC87425-9A9F-4584-8D07-313F79435D64}
